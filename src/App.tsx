@@ -1,5 +1,6 @@
-import { useState } from 'react'
-import './App.css'
+import { useState } from 'react';
+import './App.css';
+import {action, oringals} from './usls/urls';
 import NavBar from './Components/NavBar/NavBar'
 import Banner from './Components/Banner/Banner'
 import RowPost from './Components/RowPost/RowPost'
@@ -11,7 +12,9 @@ function App() {
     <>
     <NavBar/>
     <Banner/>
-    <RowPost/>
+    <RowPost title='Netflix Originals' url={oringals}  />
+    <RowPost title="Action" isSmall url={action}/>
+
     </>
   )
 }

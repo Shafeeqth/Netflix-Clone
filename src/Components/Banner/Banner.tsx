@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "./Banner.css";
-import { API_KEY, baseUrl, imageUrl } from "../../constants/constants";
+import { API_KEY,  imageUrl } from "../../constants/constants";
 import axios from "../../axios/axios";
 
 interface Movie {
